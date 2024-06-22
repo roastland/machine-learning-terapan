@@ -81,27 +81,33 @@ Dengan *stakeholders* yang dituju pada hasil akhir penelitian adalah pengelola *
 - Pada *boxplot numerical features* di Gambar 1 dan Gambar 2, kolom `temp` dan `atemp` tidak terdapat *outlier* di kedua *dataset*. Sedangkan kolom `hum` dan `windspeed` terdapat *outlier* di kedua *dataset*.
   
 ![Boxplot Day](https://github.com/roastland/machine-learning-terapan/blob/main/projects/half-class-project/assets/1.png?raw=true)
+
 *Gambar 1: Boxplot fitur numerikal pada dataset `day`*
 
 ![Boxplot Hour](https://github.com/roastland/machine-learning-terapan/blob/main/projects/half-class-project/assets/2.png?raw=true)
+
 *Gambar 2: Boxplot fitur numerikal pada dataset `hour`*
 
 - Pada Gambar 3, terlihat pengguna `casual` dan `registered` menunjukkan kenaikan jumlah di tahun 2012 dibanding 2011.
 
 ![Time-Series Line Chart](https://github.com/roastland/machine-learning-terapan/blob/main/projects/half-class-project/assets/3.png?raw=true)
+
 *Gambar 3: Time-Series Line Chart pengguna `casual` dan `registered`*
 
 - Pada Gambar 4, terlihat pengguna `casual` cenderung lebih banyak di sekitar jam 12-17, sedangkan pengguna `registered` puncaknya di jam 8 dan jam 17-18. Dapat diasumsikan bahwa pengguna `registered` adalah para pekerja yang berangkat kerja (jam 8) dan pulang kerja (jam 17).
 
 ![Hourly Line Chart](https://github.com/roastland/machine-learning-terapan/blob/main/projects/half-class-project/assets/4.png?raw=true)
+
 *Gambar 4: Hourly Line Chart pengguna `casual` dan `registered`*
 
 - Pada Gambar 5 dan Gambar 6, terlihat pengguna `casual` cenderung lebih banyak di hari Sabtu-Minggu (*weekend*), sedangkan pengguna `registered` lebih banyak di hari Senin-Jumat (*weekday*). Dapat diasumsikan bahwa pengguna `casual` adalah mayoritas pengguna yang sedang liburan dan pengguna `registered` adalah mayoritas para pekerja kantoran.
 
 ![Bar Chart Casual](https://github.com/roastland/machine-learning-terapan/blob/main/projects/half-class-project/assets/5.png?raw=true)
+
 *Gambar 5: Bar Chart pengguna `casual` setiap harinya*
 
 ![Bar Chart Registered](https://github.com/roastland/machine-learning-terapan/blob/main/projects/half-class-project/assets/6.png?raw=true)
+
 *Gambar 6: Bar Chart pengguna `registered` setiap harinya*
 
 - Pada *correlation matrix* untuk fitur numerik *dataset* `day` di Gambar 7 dan *dataset* `hour` di Gambar 8 tidak terdapat fitur yang signifikan berkorelasi (mendekati -1 atau 1) terhadap kolom target (`casual` dan `registered`). Akan tetapi:
@@ -109,9 +115,11 @@ Dengan *stakeholders* yang dituju pada hasil akhir penelitian adalah pengelola *
   - Kolom `temp` memiliki korelasi paling besar pada *dataset* `hour` dengan nilai korelasi 0.46 terhadap target `casual` dan 0.34 terhadap target `registered`.
 
 ![Corr Matrix Day](https://github.com/roastland/machine-learning-terapan/blob/main/projects/half-class-project/assets/7.png?raw=true)
+
 *Gambar 7: Correlation Matrix fitur numerik dataset `day`*
 
 ![Corr Matrix Hour](https://github.com/roastland/machine-learning-terapan/blob/main/projects/half-class-project/assets/8.png?raw=true)
+
 *Gambar 8: Correlation Matrix fitur numerik dataset `hour`*
 
 EDA lebih lengkap dapat dilihat di [notebook](https://github.com/roastland/machine-learning-terapan/blob/main/projects/half-class-project/submission_1.ipynb).
@@ -214,15 +222,15 @@ Keempat algoritma *machine learning* akan dilatih dan diuji, dengan asumsi awal 
 Metrik evaluasi yang digunakan adalah *Mean Squared Error* (MSE) karena model yang dilakukan adalah regresi. Pada kasus regresi, jika prediksi mendekati nilai sebenarnya (eror kecil), performanya baik. Sedangkan jika tidak (eror besar), performanya buruk. Metrik MSE mengukur rata-rata kuadrat kesalahan atau deviasi antara nilai prediksi dan nilai sebenarnya.
 
 Formula MSE: 
-$$ MSE = \frac{1}{N} \sum_{i=1}^{N} (y_i - {y\_pred_i})^2 \ $$
+$$MSE = \frac{1}{N} \sum_{i=1}^{N} (y_i - {y\\_pred_i})^2$$
 
 Keterangan:
 
 $N =$ jumlah dataset
 
-$yi =$ nilai sebenarnya
+$y_i =$ nilai sebenarnya
 
-$y\_pred_i =$ nilai prediksi
+$y\\_pred_i =$ nilai prediksi
 
 MSE dihitung untuk setiap baris prediksi dengan nilai yang sebenarnya, dalam proyek ini, nilai `casual` dan `registered` dari dataset `day` dan `hour` yang menjadi nilai untuk diprediksi dan dihitung erornya. Semakin rendah nilai MSE, maka model memberikan performa yang semakin baik.
 
@@ -240,6 +248,7 @@ Hasil evaluasi setiap model algoritma menggunakan metrik MSE pada Dataset `day` 
 | XGBoost      |	6.283987  |	78.384786  |
 
 ![Rank Model 1](https://github.com/roastland/machine-learning-terapan/blob/main/projects/half-class-project/assets/9.png?raw=true)
+
 *Gambar 9: Ranking model berdasarkan MSE pada data uji Dataset `day` dengan Target `casual`*
 
 Hasil evaluasi setiap model algoritma menggunakan metrik MSE pada Dataset `day` dengan Target `registered` dapat dilihat di Tabel 2 dan Gambar 10.
@@ -253,6 +262,7 @@ Hasil evaluasi setiap model algoritma menggunakan metrik MSE pada Dataset `day` 
 | XGBoost      |	30.385332 |	385.472429 |
 
 ![Rank Model 2](https://github.com/roastland/machine-learning-terapan/blob/main/projects/half-class-project/assets/10.png?raw=true)
+
 *Gambar 10: Ranking model berdasarkan MSE pada data uji Dataset `day` dengan Target `registered`*
 
 Hasil evaluasi setiap model algoritma menggunakan metrik MSE pada Dataset `hour` dengan Target `casual` dapat dilihat di Tabel 3 dan Gambar 11.
@@ -266,6 +276,7 @@ Hasil evaluasi setiap model algoritma menggunakan metrik MSE pada Dataset `hour`
 | XGBoost      | 0.338983 |	0.475651 |
 
 ![Rank Model 3](https://github.com/roastland/machine-learning-terapan/blob/main/projects/half-class-project/assets/11.png?raw=true)
+
 *Gambar 11: Ranking model berdasarkan MSE pada data uji Dataset `hour` dengan Target `casual`*
 
 Hasil evaluasi setiap model algoritma menggunakan metrik MSE pada Dataset `hour` dengan Target `registered` dapat dilihat di Tabel 4 dan Gambar 12.
@@ -279,6 +290,7 @@ Hasil evaluasi setiap model algoritma menggunakan metrik MSE pada Dataset `hour`
 | XGBoost      | 2.570123  | 2.959357  |
 
 ![Rank Model 4](https://github.com/roastland/machine-learning-terapan/blob/main/projects/half-class-project/assets/12.png?raw=true)
+
 *Gambar 12: Ranking model berdasarkan MSE pada data uji Dataset `hour` dengan Target `registered`*
 
 ### Kesimpulan
