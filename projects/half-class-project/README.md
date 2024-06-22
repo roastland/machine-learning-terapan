@@ -2,25 +2,17 @@
 
 ## Domain Proyek: *Social Science*
 
-Sistem *bike-sharing* adalah generasi baru dari penyewaan sepeda tradisional di mana seluruh proses mulai dari keanggotaan, penyewaan, hingga pengembalian menjadi otomatis. Melalui sistem ini, pengguna dapat dengan mudah menyewa sepeda dari satu lokasi dan mengembalikannya di lokasi lain. Saat ini, terdapat lebih dari 500 program *bike-sharing* di seluruh dunia dengan lebih dari 500 ribu sepeda. Sistem *bike-sharing* sangat diminati karena perannya yang penting dalam masalah lalu lintas, lingkungan, dan kesehatan. [[1](#referensi)]
+Sistem *bike-sharing* adalah generasi baru dari penyewaan sepeda tradisional di mana seluruh proses mulai dari keanggotaan, penyewaan, hingga pengembalian menjadi otomatis. Melalui sistem ini, pengguna dapat dengan mudah menyewa sepeda dari satu lokasi dan mengembalikannya di lokasi lain. Saat ini, terdapat lebih dari 500 program *bike-sharing* di seluruh dunia dengan lebih dari 500 ribu sepeda. Sistem *bike-sharing* sangat diminati karena perannya yang penting dalam masalah lalu lintas, lingkungan, dan kesehatan [[1](#referensi)].
 
 ### Latar Belakang Proyek
 
-Dengan semakin banyak sistem *bike-sharing*, jumlah pengguna semakin meningkat dan pada saat tertentu ketersediaan sumber daya *bike-sharing* bisa saja tidak ada. Maka dari itu, pola mobilitas pengguna *bike-sharing* penting untuk diidentifikasi dan diselesaikan karena dapat membantu dalam perencanaan dan pengelolaan sumber daya yang lebih baik untuk sistem *bike-sharing*. Dengan prediksi yang akurat, pihak pengelola dapat memastikan ketersediaan sepeda pada waktu atau musim puncak pengguna di berbagai lokasi dan meningkatkan pengalaman pengguna. 
+Dengan semakin banyaknya sistem *bike-sharing*, jumlah pengguna terus meningkat dan pada saat-saat tertentu ketersediaan sepeda bisa menjadi masalah. Oleh karena itu, pola mobilitas pengguna *bike-sharing* perlu diidentifikasi dan diatasi agar dapat membantu dalam perencanaan dan pengelolaan sumber daya yang lebih baik untuk sistem ini. 
 
-#### **Masalah:**
-1. Mengidentifikasi waktu atau musim puncak pengguna sepeda.
-2. Menentukan kondisi yang paling memengaruhi jumlah pengguna.
-3. Memprediksi jumlah pengguna berdasarkan kondisi karakteristik tertentu.
+Dengan prediksi yang akurat, pihak pengelola dapat memastikan ketersediaan sepeda pada waktu atau musim puncak di berbagai lokasi, sehingga dapat meningkatkan pengalaman pengguna. Pentingnya pola ini adalah untuk memastikan bahwa sepeda tersedia pada saat dibutuhkan, menghindari kekurangan sepeda yang bisa menyebabkan ketidaknyamanan pengguna, serta untuk meningkatkan efisiensi operasional dan kepuasan pelanggan.
 
-#### **Urgensi:**
-Dengan solusi ini, pengelola dapat:
-- Mengoptimalkan distribusi sepeda.
-- Mengurangi ketidaknyamanan pengguna karena kekurangan sepeda.
-- Meningkatkan efisiensi operasional dan kepuasan pelanggan.
+Masalah utama yang dihadapi adalah mengidentifikasi waktu atau musim puncak penggunaan sepeda, menentukan kondisi yang paling memengaruhi jumlah pengguna, dan memprediksi jumlah pengguna berdasarkan karakteristik tertentu. Dengan memahami pola ini, pengelola dapat mengoptimalkan distribusi sepeda, mengurangi ketidaknyamanan pengguna karena kekurangan sepeda, dan meningkatkan efisiensi operasional serta kepuasan pelanggan.
 
-#### **Kontribusi *Machine Learning*:**
-Model *machine learning* dapat memproses data historis untuk menemukan pola penggunaan, memberikan prediksi yang akurat mengenai permintaan di masa depan, dan membantu pengambilan keputusan yang lebih baik dalam pengelolaan *bike-sharing*. [[2](#referensi)]
+Model *machine learning* dapat memproses data historis untuk menemukan pola penggunaan, memberikan prediksi yang akurat mengenai permintaan di masa depan, dan membantu pengambilan keputusan yang lebih baik dalam pengelolaan *bike-sharing*. Dengan demikian, penggunaan model *machine learning* dapat memberikan solusi yang signifikan dalam manajemen sistem *bike-sharing* ini [[2](#referensi)].
 
 Referensi penelitian terkait:
 - [Fanaee-T & Gama, 2013](https://www.semanticscholar.org/paper/Event-labeling-combining-ensemble-detectors-and-Fanaee-T-Gama/bc42899f599d31a5d759f3e0a3ea8b52479d6423)
